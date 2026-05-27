@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="presets">
+        <item>Select a preset…</item>
+        <item>My Digital Consumption</item>
+        <item>Average Digital Consumption</item>
+        <item>Intensive Digital Consumption</item>
+        <item>Video Streaming</item>
+        <item>Home Office</item>
+    </string-array>
+    <color name="bg_light">#F1F8E9</color>
+    <color name="green_dark">#1B5E20</color>
+    <color name="green_light">#A5D6A7</color>
+    <color name="green_medium">#388E3C</color>
+    <color name="text_secondary">#555555</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Econova</string>
+    <style name="Theme.DCF" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_dark</item>
+        <item name="colorPrimaryVariant">@color/green_medium</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/green_dark</item>
+    </style>
+</resources>

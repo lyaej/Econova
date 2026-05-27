@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="presets">
+        <item>Select a preset…</item>
+        <item>My Digital Consumption</item>
+        <item>Average Digital Consumption</item>
+        <item>Intensive Digital Consumption</item>
+        <item>Video Streaming</item>
+        <item>Home Office</item>
+    </string-array>
+</resources>
