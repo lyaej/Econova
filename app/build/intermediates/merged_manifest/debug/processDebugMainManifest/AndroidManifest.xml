@@ -43,6 +43,7 @@
         <activity android:name="com.dcf.tracker.ui.OnboardingActivity" />
         <activity android:name="com.dcf.tracker.ui.MainActivity" />
         <activity android:name="com.dcf.tracker.ui.AboutActivity" />
+        <activity android:name="com.dcf.tracker.ui.HistoryActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

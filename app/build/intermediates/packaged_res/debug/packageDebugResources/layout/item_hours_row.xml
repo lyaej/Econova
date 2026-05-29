@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"
+    android:layout_marginBottom="4dp">
+    <TextView android:id="@+id/tvProductName"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:textSize="13sp" android:textColor="#333333"/>
+    <EditText android:id="@+id/etHours"
+        android:layout_width="60dp" android:layout_height="40dp"
+        android:inputType="number" android:maxLength="2"
+        android:gravity="center" android:hint="1"
+        android:textSize="14sp" android:background="@drawable/spinner_bg"
+        android:paddingStart="4dp" android:paddingEnd="4dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text=" / 24h" android:textSize="12sp"
+        android:textColor="#888888" android:layout_marginStart="4dp"/>
+</LinearLayout>

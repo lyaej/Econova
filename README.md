@@ -13,10 +13,11 @@ Econova allows users to calculate and track the carbon footprint of their digita
 ## Features
 
 - One-time name input saved locally, no login required
-- Digital carbon footprint calculator with 15 products and services
+- Digital carbon footprint calculator with various products and services
 - Preset consumption profiles (Average, Intensive, Video Streaming, Home Office)
-- Live bar chart breakdown per selected item
+- Live bar chart, and pie chart breakdown per selected item
 - Export result as PNG to phone gallery
+- Saves history records for each date, with filtering by day, week, month, and year
 - Clear data option that resets the app to the name input screen
 - About Us page with researcher profiles and social links
 
@@ -24,12 +25,13 @@ Econova allows users to calculate and track the carbon footprint of their digita
 
 ## App Flow
 
-|   Screen   | Description |
-|:----------:|:--|
-|   Splash   | App logo displayed on launch for 2 seconds |
-| Onboarding | One-time name input, stored in SharedPreferences |
+|   Screen   | Description                                                                                 |
+|:----------:|:--------------------------------------------------------------------------------------------|
+|   Splash   | App logo displayed on launch for 2 seconds                                                  |
+| Onboarding | One-time name input, stored in SharedPreferences                                            |
 |    Main    | Carbon footprint calculator with presets, product selector, result card, and export buttons |
-|   About    | Research description and researcher profiles |
+|  History   | Saves the track logs of the user                                                            |
+|   About    | Research description and researcher profiles                                                |
 
 ---
 
@@ -41,14 +43,18 @@ app/src/main/
 ├── java/com/dcf/tracker/
 │   ├── data/
 │   │   └── Prefs.kt
+│   ├── model/
+│   │   └── DailyLog.kt
 │   └── ui/
-│       ├── SplashActivity.kt
-│       ├── OnboardingActivity.kt
+│       ├── AboutActivity.kt
+│       ├── ChartUtils.kt
+│       ├── HistoryActivity.kt
 │       ├── MainActivity.kt
-│       └── AboutActivity.kt
+│       └── OnboardingActivity.kt
+│       └── SplashActivity.kt
 └── res/
     ├── drawable/
-    │   ├── ic_leaf.xml
+    │   ├── logo.png
     │   ├── ic_person_placeholder.xml
     │   ├── circle_bg.xml
     │   ├── spinner_bg.xml
@@ -57,10 +63,13 @@ app/src/main/
     │   └── researcher3.jpg
     ├── layout/
     │   ├── activity_splash.xml
+    │   ├── activity_history.xml
     │   ├── activity_onboarding.xml
     │   ├── activity_main.xml
     │   ├── activity_about.xml
     │   ├── item_researcher.xml
+    │   ├── item_log_entry.xml
+    │   ├── item_hours_row.xml
     │   └── item_breakdown_row.xml
     └── values/
         ├── arrays.xml

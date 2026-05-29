@@ -1,7 +1,7 @@
 [
     {
-        "merged": "com.dcf.tracker.app-debug-32:/layout_activity_splash.xml.flat",
-        "source": "com.dcf.tracker.app-main-34:/layout/activity_splash.xml"
+        "merged": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-debug-32:\\layout_item_log_entry.xml.flat",
+        "source": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-main-34:\\layout\\item_log_entry.xml"
     },
     {
         "merged": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-debug-32:\\drawable_ic_person_placeholder.xml.flat",
@@ -10,6 +10,14 @@
     {
         "merged": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-debug-32:\\drawable_circle_bg.xml.flat",
         "source": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-main-34:\\drawable\\circle_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-debug-32:\\layout_item_hours_row.xml.flat",
+        "source": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-main-34:\\layout\\item_hours_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-debug-32:\\layout_activity_history.xml.flat",
+        "source": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-main-34:\\layout\\activity_history.xml"
     },
     {
         "merged": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-debug-32:\\drawable_ic_leaf.xml.flat",
@@ -38,6 +46,10 @@
     {
         "merged": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-debug-32:\\drawable_researcher2.png.flat",
         "source": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-main-34:\\drawable\\researcher2.png"
+    },
+    {
+        "merged": "com.dcf.tracker.app-debug-32:/layout_activity_main.xml.flat",
+        "source": "com.dcf.tracker.app-main-34:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\Aneeza\\.gradle\\daemon\\9.0.0\\com.dcf.tracker.app-debug-32:\\drawable_spinner_bg.xml.flat",

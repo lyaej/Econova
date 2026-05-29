@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -24,9 +25,6 @@ public final class ActivityMainBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final LinearLayout breakdownContainer;
-
-  @NonNull
   public final Button btnAbout;
 
   @NonNull
@@ -36,13 +34,40 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button btnDownloadPng;
 
   @NonNull
+  public final Button btnHistory;
+
+  @NonNull
+  public final Button btnPickDate;
+
+  @NonNull
+  public final Button btnSaveLog;
+
+  @NonNull
   public final CardView footprintCard;
+
+  @NonNull
+  public final LinearLayout hoursContainer;
+
+  @NonNull
+  public final LinearLayout hoursSection;
+
+  @NonNull
+  public final ImageView ivBarChart;
+
+  @NonNull
+  public final ImageView ivPieChart;
+
+  @NonNull
+  public final LinearLayout legendContainer;
 
   @NonNull
   public final ChipGroup productGrid;
 
   @NonNull
   public final Spinner spinnerPreset;
+
+  @NonNull
+  public final TextView tvDailyValue;
 
   @NonNull
   public final TextView tvFootprintUnit;
@@ -53,23 +78,38 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView tvGreeting;
 
-  private ActivityMainBinding(@NonNull LinearLayout rootView,
-      @NonNull LinearLayout breakdownContainer, @NonNull Button btnAbout,
-      @NonNull Button btnClearData, @NonNull Button btnDownloadPng, @NonNull CardView footprintCard,
-      @NonNull ChipGroup productGrid, @NonNull Spinner spinnerPreset,
+  @NonNull
+  public final TextView tvSelectedDate;
+
+  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull Button btnAbout,
+      @NonNull Button btnClearData, @NonNull Button btnDownloadPng, @NonNull Button btnHistory,
+      @NonNull Button btnPickDate, @NonNull Button btnSaveLog, @NonNull CardView footprintCard,
+      @NonNull LinearLayout hoursContainer, @NonNull LinearLayout hoursSection,
+      @NonNull ImageView ivBarChart, @NonNull ImageView ivPieChart,
+      @NonNull LinearLayout legendContainer, @NonNull ChipGroup productGrid,
+      @NonNull Spinner spinnerPreset, @NonNull TextView tvDailyValue,
       @NonNull TextView tvFootprintUnit, @NonNull TextView tvFootprintValue,
-      @NonNull TextView tvGreeting) {
+      @NonNull TextView tvGreeting, @NonNull TextView tvSelectedDate) {
     this.rootView = rootView;
-    this.breakdownContainer = breakdownContainer;
     this.btnAbout = btnAbout;
     this.btnClearData = btnClearData;
     this.btnDownloadPng = btnDownloadPng;
+    this.btnHistory = btnHistory;
+    this.btnPickDate = btnPickDate;
+    this.btnSaveLog = btnSaveLog;
     this.footprintCard = footprintCard;
+    this.hoursContainer = hoursContainer;
+    this.hoursSection = hoursSection;
+    this.ivBarChart = ivBarChart;
+    this.ivPieChart = ivPieChart;
+    this.legendContainer = legendContainer;
     this.productGrid = productGrid;
     this.spinnerPreset = spinnerPreset;
+    this.tvDailyValue = tvDailyValue;
     this.tvFootprintUnit = tvFootprintUnit;
     this.tvFootprintValue = tvFootprintValue;
     this.tvGreeting = tvGreeting;
+    this.tvSelectedDate = tvSelectedDate;
   }
 
   @Override
@@ -99,12 +139,6 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.breakdownContainer;
-      LinearLayout breakdownContainer = ViewBindings.findChildViewById(rootView, id);
-      if (breakdownContainer == null) {
-        break missingId;
-      }
-
       id = R.id.btnAbout;
       Button btnAbout = ViewBindings.findChildViewById(rootView, id);
       if (btnAbout == null) {
@@ -123,9 +157,57 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnHistory;
+      Button btnHistory = ViewBindings.findChildViewById(rootView, id);
+      if (btnHistory == null) {
+        break missingId;
+      }
+
+      id = R.id.btnPickDate;
+      Button btnPickDate = ViewBindings.findChildViewById(rootView, id);
+      if (btnPickDate == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSaveLog;
+      Button btnSaveLog = ViewBindings.findChildViewById(rootView, id);
+      if (btnSaveLog == null) {
+        break missingId;
+      }
+
       id = R.id.footprintCard;
       CardView footprintCard = ViewBindings.findChildViewById(rootView, id);
       if (footprintCard == null) {
+        break missingId;
+      }
+
+      id = R.id.hoursContainer;
+      LinearLayout hoursContainer = ViewBindings.findChildViewById(rootView, id);
+      if (hoursContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.hoursSection;
+      LinearLayout hoursSection = ViewBindings.findChildViewById(rootView, id);
+      if (hoursSection == null) {
+        break missingId;
+      }
+
+      id = R.id.ivBarChart;
+      ImageView ivBarChart = ViewBindings.findChildViewById(rootView, id);
+      if (ivBarChart == null) {
+        break missingId;
+      }
+
+      id = R.id.ivPieChart;
+      ImageView ivPieChart = ViewBindings.findChildViewById(rootView, id);
+      if (ivPieChart == null) {
+        break missingId;
+      }
+
+      id = R.id.legendContainer;
+      LinearLayout legendContainer = ViewBindings.findChildViewById(rootView, id);
+      if (legendContainer == null) {
         break missingId;
       }
 
@@ -138,6 +220,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.spinnerPreset;
       Spinner spinnerPreset = ViewBindings.findChildViewById(rootView, id);
       if (spinnerPreset == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDailyValue;
+      TextView tvDailyValue = ViewBindings.findChildViewById(rootView, id);
+      if (tvDailyValue == null) {
         break missingId;
       }
 
@@ -159,9 +247,16 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, breakdownContainer, btnAbout,
-          btnClearData, btnDownloadPng, footprintCard, productGrid, spinnerPreset, tvFootprintUnit,
-          tvFootprintValue, tvGreeting);
+      id = R.id.tvSelectedDate;
+      TextView tvSelectedDate = ViewBindings.findChildViewById(rootView, id);
+      if (tvSelectedDate == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((LinearLayout) rootView, btnAbout, btnClearData,
+          btnDownloadPng, btnHistory, btnPickDate, btnSaveLog, footprintCard, hoursContainer,
+          hoursSection, ivBarChart, ivPieChart, legendContainer, productGrid, spinnerPreset,
+          tvDailyValue, tvFootprintUnit, tvFootprintValue, tvGreeting, tvSelectedDate);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
