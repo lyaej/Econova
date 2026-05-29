@@ -6,7 +6,7 @@ A mobile application developed as a proposed solution by 1st year IT students at
 
 ## Overview
 
-Econova allows users to calculate and track the carbon footprint of their digital lifestyle. Users select the digital devices and services they use daily, and the app computes the estimated CO2 emissions per year. Results can be exported as PNG or SVG directly to the phone gallery.
+Econova allows users to calculate and track the carbon footprint of their digital lifestyle. Users select the digital devices and services they use daily, and the app computes the estimated CO2 emissions per year. Results can be exported as PNG directly to the phone gallery.
 
 ---
 
